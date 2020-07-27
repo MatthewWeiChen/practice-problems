@@ -1,9 +1,9 @@
 function phAnalyzer(ph) {
-  if (ph <= 3) {
+  if (ph >= 1 && ph < 7) {
     return "acidic"
-  } else if (ph > 4 && ph <= 10) {
+  } else if (ph === 7) {
     return "neutral"
-  } else if (ph <= 14) {
+  } else if (ph >= 8 && ph <= 14) {
     return "alkaline"
   }
   return "invalid pH Value"
