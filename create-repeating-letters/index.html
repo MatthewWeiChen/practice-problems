@@ -13,9 +13,9 @@
   <script>
 
     var word = '';
-    var newString = '';
 
     function createRepeatingLetters(word, numOfRepeats) {
+      newString = '';
       for (var i = 0; i < word.length; i++) {
         var repeatedLetter = word[i].repeat(numOfRepeats);
         newString += repeatedLetter;
