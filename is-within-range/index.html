@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    //define a function isWithinRange
+    /*
+      1. two parameters - number and object literal
+        1. number, rangeObject
+        2. rangeObject will need to be set with properties of min and max
+      2. grabs number and store in variable
+      3. if number compares to the min number and max number of rangeObject
+        1. it will need to compare to both and both have to be true
+      4. if it falls between return true
+      5. if it doesn't fall between return false.
+
+*/
+    var rangeObject = {
+      min: null,
+      max: null,
+    };
+
+    function isWithinRange(number, rangeObject) {
+      var num = number;
+
+      if (num >= rangeObject.min && num <= rangeObject.max) {
+        return true;
+      } return false;
+
+    }
+
+  </script>
+</body>
+
+</html>
