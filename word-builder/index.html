@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+
+    //takes in string
+    //returns array
+    //1.return array with index that starts with first letter
+    //2. increments index and adds in next letterr
+    //3. letter added needs to stay
+    //for each letter in string push to arrray
+
+    //j, ja,
+    //push first letter into array
+    //push first and second letter into array.
+
+    function wordBuilder(wordToSpell) {
+      var stringArray = []; // J,
+      var tempLetter = ''; // J
+      for (var i = 0; i < wordToSpell.length; i++) {
+        tempLetter += wordToSpell[i];
+        stringArray.push(tempLetter);
+
+      } return stringArray;
+    }
+  </script>
+</body>
+
+</html>
