@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    //function freeCoffeeCups
+    //for every 6 cups they get 1 free
+    //if number divded by 6 equals whole number
+    //whole number equals number of free cups
+    //not whole number does not get free cup
+
+    function freeCoffeeCups(coffeeCups) {
+      var checkAmt = Math.floor(coffeeCups / 6)
+      if (checkAmt - Math.floor(checkAmt) === 0) {
+        coffeeCups += checkAmt;
+        return coffeeCups;
+      } else {
+        return coffeeCups;
+      }
+    }
+
+  </script>
+</body>
+
+</html>
