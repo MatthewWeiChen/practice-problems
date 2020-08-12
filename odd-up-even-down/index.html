@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+
+    //function oddUpEvenDown
+    //takes an array
+    //copy the array
+    //check if odd or even with %
+    //increments odd values by 1
+    //decrements even values by 1
+
+    function oddUpEvenDown(array) {
+      var tempArr = array.slice();
+      for (var j = 0; j < tempArr.length; j++) {
+        if (tempArr[j] % 2) {
+          var addedNum = tempArr[j] + 1;
+          tempArr[j] = addedNum;
+        } else {
+          var subNum = tempArr[j] - 1;
+          tempArr[j] = subNum;
+        }
+      } return tempArr;
+    }
+
+  </script>
+</body>
+
+</html>
