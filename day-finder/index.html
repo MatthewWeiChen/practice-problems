@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+
+    function dayFinder(stringDate) {
+      const daysOfWeek = [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday",
+        "Sunday"
+      ]
+
+      let date = new Date(stringDate);
+      const day1 = date.getDay(stringDate);
+      console.log(JSON.stringify(daysOfWeek[day1]))
+    }
+
+  </script>
+</body>
+
+</html>
