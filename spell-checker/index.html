@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    //take in two arrays
+    //return two arays
+    //one array will contain words that are spelled correctly
+    //contain words which were spelled incorrectly
+
+    function spellChecker(userWords, correctWords) {
+
+      const wordObject = {
+        correct: '',
+        incorrect: ''
+      }
+
+      const incorrectWordsTemp = []
+      const correctWordsTemp = []
+
+      for (let i = 0; i < userWords.length; i++) {
+        if (userWords[i] != correctWords[i]) {
+          incorrectWordsTemp.push(userWords[i]);
+        } else {
+          correctWordsTemp.push(userWords[i]);
+        }
+      }
+      wordObject.correct = correctWordsTemp;
+      wordObject.incorrect = incorrectWordsTemp
+      return wordObject;
+    }
+  </script>
+</body>
+
+</html>
