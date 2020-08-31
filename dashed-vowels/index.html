@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    //function that takes a string and returns dashes on the left and right side of every vowel(a e i o u).
+
+    //defined a function that takes a string as a parameter
+    //checks every character if it is a vowel
+    //data model of vowels to compare with
+    //for each character store in empty variable
+    //check if it's a vowel by checking each of the indexes in vowel data model
+    //if vowel found then put a dash to left and right of the letter
+    //put the new vowel with dashes in word
+    //
+    //otherwise don't
+    //return result
+    let dashedString = ''
+
+    function dashed(string) {
+      const vowels = ["a", "e", "i", "o", "u"]
+
+      for (let i = 0; i < string.length; i++) {
+        if (string[i] === vowels[0] || vowels[1] || vowels[2] || vowels[3] || vowels[4]) {
+          let dashedLetter = `-${string[i]}-`
+          dashedString += dashedLetter;
+        } else {
+          let nonDashedLetter = string[i];
+          dashedString += nonDashedLetter;
+        }
+      }
+      return dashedString;
+    }
+
+
+    //solution online
+    const dashed = str => str.replace(/([aeiou])/gi, '-$1-')
+  </script>
+</body>
+
+</html>
