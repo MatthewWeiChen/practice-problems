@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    //function payscaleAnalyzer
+    //takes in array
+    //returns difference between highest and lowest
+    //sort array first and put in variable
+    //sort method
+    //store first index
+    //store last index = payList.length -1
+    //return the difference of the two.
+
+    payscaleAnalyzer = (payList) => {
+      const sortedPayList = payList;
+      sortedPayList.sort();
+      let smallestNum = sortedPayList[0];
+      let largestNum = sortedPayList[sortedPayList.length - 1];
+      return (largestNum - smallestNum);
+
+    }
+  </script>
+</body>
+
+</html>
